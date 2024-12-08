@@ -204,7 +204,9 @@ with col1:
                                     value=1.8, 
                                     step=0.1, 
                                     min_value=0.5, 
-                                    max_value=3.5, label_visibility="collapsed")
+                                    max_value=3.5, label_visibility="collapsed",
+                                    on_change=define_problem
+                                    )
         
         c1, c2 = st.columns(2, vertical_alignment="center")
 
@@ -214,7 +216,8 @@ with col1:
                               value=0.5, 
                               step=0.05, 
                               min_value=0.00, 
-                              max_value=10.0, label_visibility="collapsed", on_change=define_problem
+                              max_value=10.0, label_visibility="collapsed", 
+                              on_change=define_problem
                               )
         
         c1, c2 = st.columns(2, vertical_alignment="center")
@@ -225,7 +228,8 @@ with col1:
                              step=0.05, 
                              min_value=0.05, 
                              max_value=1.0, 
-                             label_visibility="collapsed"
+                             label_visibility="collapsed",
+                             on_change=define_problem
                              )
 
         c1, c2 = st.columns(2, vertical_alignment="center")
@@ -236,7 +240,8 @@ with col1:
                              step=0.05, 
                              min_value=0.01, 
                              max_value=0.3, 
-                             label_visibility="collapsed", on_change=define_problem
+                             label_visibility="collapsed", 
+                             on_change=define_problem
                              )
         
         c1, c2 = st.columns(2, vertical_alignment="center")
@@ -246,7 +251,8 @@ with col1:
                               value=30.0, 
                               step=2.5, 
                               min_value=0.10, 
-                              max_value=60.0, label_visibility="collapsed", on_change=define_problem
+                              max_value=60.0, label_visibility="collapsed", 
+                              on_change=define_problem
                               )
         
         c1, c2 = st.columns(2, vertical_alignment="center")
@@ -257,7 +263,8 @@ with col1:
                              step=0.05, 
                              min_value=0.10, 
                              max_value=1.0, 
-                             label_visibility="collapsed", on_change=define_problem
+                             label_visibility="collapsed", 
+                             on_change=define_problem
                              )
         
         # c1, c2 = st.columns(2, vertical_alignment="center")
@@ -320,7 +327,8 @@ with col2:
                              step=0.05, 
                              min_value=0.20, 
                              max_value=2.0, 
-                             label_visibility="collapsed", on_change=define_problem
+                             label_visibility="collapsed", 
+                             on_change=define_problem
                              )
         
         c1, c2 = st.columns((1,1.5), vertical_alignment="center")
@@ -331,7 +339,8 @@ with col2:
                              step=0.05, 
                              min_value=0.0, 
                              max_value=5.0, 
-                             label_visibility="collapsed", on_change=define_problem
+                             label_visibility="collapsed",
+                             on_change=define_problem
                              )
         
         c1, c2 = st.columns((1,1.5), vertical_alignment="center")
@@ -342,7 +351,8 @@ with col2:
                              step=0.05, 
                              min_value=0.0, 
                              max_value=5.0, 
-                             label_visibility="collapsed", on_change=define_problem
+                             label_visibility="collapsed", 
+                             on_change=define_problem
                              )
         c1, c2 = st.columns((1,1.5), vertical_alignment="center")
         c1.text("L2 [m]")
@@ -351,7 +361,8 @@ with col2:
                              value=1.0, 
                              step=0.05, 
                              min_value=0.5, 
-                             max_value=10.0, label_visibility="collapsed", on_change=define_problem
+                             max_value=10.0, label_visibility="collapsed", 
+                             on_change=define_problem
                              )
         
         c1, c2 = st.columns((1,1.5), vertical_alignment="center")
@@ -361,7 +372,8 @@ with col2:
                                value=0.0, 
                                step=5., 
                                min_value=0.0, 
-                               max_value=30.0, label_visibility="collapsed", on_change=define_problem
+                               max_value=30.0, label_visibility="collapsed", 
+                               on_change=define_problem
                                )
 
 with col3:
@@ -404,7 +416,8 @@ with c2:
                           step=20., 
                           min_value=280., 
                           max_value=600., 
-                          label_visibility="collapsed", on_change=define_problem
+                          label_visibility="collapsed", 
+                          on_change=define_problem
                           )
     
     co1, co2 = reinf_design.columns((0.6, 1.1), vertical_alignment="center")
@@ -415,7 +428,8 @@ with c2:
                           step=5.0, 
                           min_value=20., 
                           max_value=50., 
-                          label_visibility="collapsed", on_change=define_problem
+                          label_visibility="collapsed", 
+                          on_change=define_problem
                           )
     
     co1, co2 = reinf_design.columns((0.6, 1.1),  vertical_alignment="center")
@@ -426,7 +440,8 @@ with c2:
                            step=0.5, 
                            min_value=3.0, 
                            max_value=7., 
-                           label_visibility="collapsed", on_change=define_problem
+                           label_visibility="collapsed", 
+                           on_change=define_problem
                            )
 
 if header_col3.button("Calculate", type="primary"):
