@@ -100,7 +100,8 @@ col1, col2, col3 = st.columns([0.6, 0.5, 1.8])
 def define_problem(*args):
 
     model =  Structural_Model(hd=st.session_state.hd, 
-                              e=st.session_state.e, 
+                              e=st.session_state.e,
+                              e_top = st.session_state.e_top,
                               hf=st.session_state.hf, 
                               hm=st.session_state.hm, 
                             #   ka=st.session_state.ka,
@@ -297,13 +298,25 @@ with col2:
         st.write("**Dimensions**")
 
         c1, c2 = st.columns((1,1.5), vertical_alignment="center")
-        c1.text("e [m]")
-        e = c2.number_input("e [m]",
+        c1.text("e bottom [m]")
+        e = c2.number_input("e bottom [m]",
                             key="e",
-                            value=0.2, 
+                            value=0.25, 
                             step=0.05, 
                             min_value=0.1, 
                             max_value=1.0, 
+                            label_visibility="collapsed", 
+                            on_change=define_problem,
+                            )
+
+        c1, c2 = st.columns((1,1.5), vertical_alignment="center")
+        c1.text("e top [m]")
+        e = c2.number_input("e [m]",
+                            key="e_top",
+                            value=0.2, 
+                            step=0.05, 
+                            min_value=0.1, 
+                            max_value=st.session_state.e, 
                             label_visibility="collapsed", 
                             on_change=define_problem,
                             )

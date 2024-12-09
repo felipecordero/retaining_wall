@@ -29,6 +29,7 @@ class Structural_Model:
                  l1,
                  l2,
                  e,
+                 e_top,
                  beta,
                  phi,
                  mu,
@@ -53,6 +54,7 @@ class Structural_Model:
         self.l2: float = l2
         self.hd: float = hd
         self.e: float = e
+        self.e_top: float = e_top
         self.beta: float = beta
         self.pp_tierra: float = pp_tierra # ton / m3
         self.pp_concrete: float = 2.5 # ton/m3
@@ -314,12 +316,13 @@ class Structural_Model:
         hd = self.hd
         hm = self.hm
         e = self.e
+        e_top = self.e_top
 
         self.muro_polygon = shp.Polygon([
             (l1, hf),
             (l1 + e, hf),
             (l1 + e, hf + hm),
-            (l1, hf + hm)
+            (l1 + e - e_top, hf + hm)
         ])
 
         self.fund_polygon = shp.Polygon([
@@ -371,6 +374,7 @@ class Structural_Model:
         hf = self.hf
         hm = self.hm
         e = self.e
+        e_top = self.e_top
         y = self.y
         hd = self.hd
         beta = self.beta
@@ -490,13 +494,22 @@ class Structural_Model:
                            xshift=-12, 
                            text=f"Hm = {round(hm, 2)} [m]")
 
-        # e
+        # e bottom
         fig.add_annotation(x=l1 + e / 2, 
+                           y=hf,
+                           showarrow=True,
+                           textangle=0,
+                        #    xshift=20,
+                        #    yshift=11,
+                           text=f"e bottom = {round(e, 2)} [m]")
+
+        # e top
+        fig.add_annotation(x=l1 + e_top / 2, 
                            y=hf + hm,
                            showarrow=False,
                            textangle=0,
                            yshift=11,
-                           text=f"e = {round(e, 2)} [m]")
+                           text=f"e top = {round(e_top, 2)} [m]")
 
         # l1
         fig.add_annotation(x=l1 / 2, 
