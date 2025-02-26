@@ -14,8 +14,7 @@ During my early days in structural engineering, I developed a Cantilever Concret
 
 <iframe src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-## https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141
-
+<!--- [Wrap text](https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141) --->
 
 
 ## Features 🚀
