@@ -6,7 +6,7 @@
 During my early days in structural engineering, I developed a Cantilever Concrete Retaining Wall Designer to assist with the design and analysis of retaining walls using Python. Today, I'm excited to present its modern version as a web application, powered by Streamlit.
 
 <iframe
-  src="https://https://retaining-wall.streamlit.app?embed=true"
+  src="https://retaining-wall.streamlit.app?embed=true"
   style="height: 450px; width: 100%;"
 ></iframe>
 
