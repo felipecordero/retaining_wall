@@ -5,17 +5,15 @@
 ## Welcome! 👋
 During my early days in structural engineering, I developed a Cantilever Concrete Retaining Wall Designer to assist with the design and analysis of retaining walls using Python. Today, I'm excited to present its modern version as a web application, powered by Streamlit.
 
+<iframe src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="100%" height="450px" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
 <iframe
   src="https://retaining-wall.streamlit.app?embed=true"
   style="height: 450px; width: 100%;"
 ></iframe>
 
-<video src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="320" height="240" controls></video>
-
-<iframe src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 <!--- [Wrap text](https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141) --->
-
 
 ## Features 🚀
 - **Define the parameters**
