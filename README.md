@@ -1,6 +1,6 @@
 # Cantilever Concrete Retaining Wall Designer
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://beam-calculator.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://retaining-wall.streamlit.app/)
 
 ## Welcome! 👋
 During my early days in structural engineering, I developed a Cantilever Concrete Retaining Wall Designer to assist with the design and analysis of retaining walls using Python. Today, I'm excited to present its modern version as a web application, powered by Streamlit.
@@ -10,7 +10,9 @@ During my early days in structural engineering, I developed a Cantilever Concret
   style="height: 450px; width: 100%;"
 ></iframe>
 
-https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141
+<video src="[path/to/video.mp4](https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141)" width="320" height="240" controls></video>
+
+## https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141
 
 
 
