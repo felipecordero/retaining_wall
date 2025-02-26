@@ -10,7 +10,9 @@ During my early days in structural engineering, I developed a Cantilever Concret
   style="height: 450px; width: 100%;"
 ></iframe>
 
-<video src="[path/to/video.mp4](https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141)" width="320" height="240" controls></video>
+<video src="https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="320" height="240" controls></video>
+
+<iframe src="(https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## https://github.com/user-attachments/assets/a9045c25-d973-45f4-b019-410f8ca80141
 
